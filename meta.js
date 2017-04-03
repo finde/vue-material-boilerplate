@@ -12,29 +12,29 @@ module.exports = {
     "name": {
       "type": "string",
       "required": true,
-      "message": "Nome do projeto"
+      "message": "Name of the project"
     },
     "description": {
       "type": "string",
       "required": false,
-      "message": "Descrição",
-      "default": "Um projeto em Vue.js"
+      "message": "Description",
+      "default": "An awesome Vue.js project"
     },
     "author": {
       "type": "string",
-      "message": "Autor(es)"
+      "message": "Author(s)"
     },
     "build": {
       "type": "list",
       "message": "Vue build",
       "choices": [
         {
-          "name": "Runtime + Compiler: esta é a recomendada",
+          "name": "Runtime + Compiler (recommended)",
           "value": "standalone",
           "short": "standalone"
         },
         {
-          "name": "Runtime-only: 6KB mais leve min+gzip, porém templates (ou qualquer Vue-specific HTML) é permitido SOMENTE em arquivos .vue - funções de renderização são requiridas em outro lugar",
+          "name": "Runtime-only: 6KB min+gzip",
           "value": "runtime",
           "short": "runtime"
         }
@@ -66,5 +66,5 @@ module.exports = {
     "test/unit/**/*": "unit",
     "test/e2e/**/*": "e2e"
   },
-  "completeMessage": "Para rodar o projeto:\n\n  cd {{destDirName}}\n  yarn install\n  yarn run dev\n\nA documentação oficial pode ser lida em https://vuejs-templates.github.io/webpack"
+  "completeMessage": "To run the project:\n\n cd {{destDirName}}\n yarn install\n yarn run dev\n\nThe official documentation can be read at https://vuejs-templates.github.io/webpack"
 };
