@@ -7,7 +7,7 @@ $ npm install -g vue-cli
 
 Then, download this template like:
 ```bash
-$ vue init pablohpsilva/vue-material-boilerplate
+$ vue init finde/vue-material-boilerplate
 ```
 # Contents
 
